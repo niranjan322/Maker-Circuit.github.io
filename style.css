@@ -266,4 +266,53 @@ body {
   display: flex;
   justify-content: center;
 }
+/* PROJECTS BACK PAGE */
+.projects-back {
+    max-width: 800px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects-back h2 {
+    color: #38bdf8;
+    margin-bottom: 40px;
+}
+
+.projects-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-btn {
+    display: block;
+    padding: 30px 20px;
+    background-color: #020617;
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #38bdf8;
+    transition: 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: #38bdf8;
+    color: #020617;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+    .projects-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .project-btn {
+        font-size: 16px;
+        padding: 22px;
+    }
+}
+
 
