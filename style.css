@@ -387,3 +387,28 @@ body {
     transform: translateY(-6px);
     box-shadow: 0 10px 25px rgba(56,189,248,0.25);
 }
+/* FORCE MOBILE GRID FOR FRONT PROJECTS */
+@media (max-width: 768px) {
+
+    #projects .projects-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    #projects .card {
+        margin: 0 !important;
+        padding: 10px;
+    }
+
+    #projects .card h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #projects .card p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
