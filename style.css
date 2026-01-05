@@ -382,8 +382,39 @@ body {
     margin: 0 12px 15px;
     opacity: 0.9;
 }
+/* MOBILE ONLY: FRONT PROJECTS 2x2 LAYOUT */
+@media (max-width: 768px) {
+
+    /* apply only to front projects section */
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 15px;
+    }
+
+    #projects .card {
+        margin: 0;            /* remove extra spacing */
+        padding: 12px;
+    }
+
+    #projects .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    #projects .card h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #projects .card p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
 
 .project-box:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 25px rgba(56,189,248,0.25);
 }
+
