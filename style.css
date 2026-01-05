@@ -417,4 +417,25 @@ body {
     transform: translateY(-6px);
     box-shadow: 0 10px 25px rgba(56,189,248,0.25);
 }
+/* MOBILE VIEW: 4 IMAGES → 2x2 GRID (INDEX PAGE ONLY) */
+@media (max-width: 768px) {
+
+    #projects .projects-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #projects .card {
+        margin: 0 !important;
+        padding: 6px;
+    }
+
+    #projects .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}
+
 
